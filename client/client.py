@@ -1,6 +1,6 @@
 import socket
 
-Host = '192.168.61.93' #change the Host to you local ip
+Host = '192.168.61.93' #change the Host to your ip address
 Port = 8080
 #start a socket stream
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as c:
