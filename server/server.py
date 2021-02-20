@@ -38,14 +38,23 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             conn.close()
         if data.decode("utf-8")=="POST":
             print("POST request from client: recieved")
+            #wait for file name
             file= conn.recv(1024)
+            #decode file name
             file_name=file.decode("utf-8")
+            #crate a file with the same file name or open existing one with same file name
             f=open(file_name,"wb")
             print("writing file")
+            #extract the recieved first line
             line=conn.recv(1024)
             while line:
+                #write the line extracted
                 f.write(line)
+                #extract the recieved next line
                 line=conn.recv(1024)
+            #close the file
             f.close()
             print("file recieved and written")
+
+            #close connection
             conn.close()

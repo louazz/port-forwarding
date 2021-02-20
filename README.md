@@ -19,3 +19,5 @@ The code below shows the implementation of a client-server TCP communication usi
      `cd ./client`
      `python3 client.py`<br />
  -You will be asked to choose POST or GET request. Make sure that if you choose GET option, the file name that you'll choose later is available in the target machine. If you choose POST request you should specify a file within your computer that will be transferred to the server's machine.
+
+#### The Architect: **Louai Zaiter**
