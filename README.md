@@ -1,5 +1,5 @@
 # port-forwarding
-The code below shows the implementation of a client-server TCP communication using port forwarding
+The code below shows the implementation of a client-server TCP communication using port forwarding.
 
 ## Requirements:
  - Python 3
